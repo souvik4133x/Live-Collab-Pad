@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --dark-bg: #111827;
+  --primary-bg: #1f2937;
+  --secondary-bg: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --accent-purple: #8b5cf6;
+  --accent-purple-hover: #7c3aed;
+  --accent-pink: #ec4899;
+  --accent-pink-hover: #db2777;
+  --status-green: #22c55e;
+  --status-yellow: #eab308;
+  --status-red: #ef4444;
+  --border-color: #4b5563;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+}

@@ -1,0 +1,81 @@
+/* Add these styles to your existing CSS */
+.btn {
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.bg-purple-600 { background-color: #8b5cf6; }
+.bg-purple-700 { background-color: #7c3aed; }
+.bg-pink-600 { background-color: #ec4899; }
+.bg-pink-700 { background-color: #db2777; }
+.bg-gray-600 { background-color: #4b5563; }
+.bg-gray-700 { background-color: #374151; }
+.bg-gray-800 { background-color: #1f2937; }
+.bg-gray-900 { background-color: #111827; }
+
+.text-gray-400 { color: #9ca3af; }
+.text-gray-500 { color: #6b7280; }
+
+/* Animations */
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease-out forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+/* Add these styles for sidebar layout */
+.app-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--primary-bg);
+  padding: 1.5rem;
+  border-right: 1px solid var(--border-color);
+}
+
+.main-content {
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+}
